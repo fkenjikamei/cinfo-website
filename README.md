@@ -1,2 +1,3 @@
 # cinfowebsite
-Site da CINFO
+
+Site da CINFO - Cordanação de Informática do Instituto Federal de Alagoas.

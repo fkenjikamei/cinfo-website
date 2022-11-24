@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #FEFEFE;
+    box-shadow:
+    0px 0.2px 0.3px rgba(0, 0, 0, 0.011),
+    0px 0.3px 0.7px rgba(0, 0, 0, 0.016),
+    0px 0.6px 1.2px rgba(0, 0, 0, 0.019),
+    0px 0.9px 1.7px rgba(0, 0, 0, 0.022),
+    0px 1.3px 2.5px rgba(0, 0, 0, 0.025),
+    0px 1.8px 3.5px rgba(0, 0, 0, 0.028),
+    0px 2.5px 5px rgba(0, 0, 0, 0.031),
+    0px 3.7px 7.3px rgba(0, 0, 0, 0.034),
+    0px 5.6px 11.3px rgba(0, 0, 0, 0.039),
+    0px 10px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+header .logo-cinfo {
+    height: 3em;
+}
+
+header .header-menu {
+    display: flex;
+    gap: 3em;
+}
+
+header .header-menu a {
+    text-decoration: none;
+    color: #161A37;
+    font-family: "Poppins";
+    font-weight: 600;
+    position: relative;
+}
+
+header .header-menu p {
+    text-decoration: none;
+    color: #161A37;
+    font-family: "Poppins";
+    font-weight: 600;
+    position: relative;
+}
+
+header .dropdown-content {
+    background-color: #FEFEFE;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    border-radius: 2px;
+    box-shadow:
+    0px 0px 0.3px rgba(0, 0, 0, 0.011),
+    0px 0px 0.7px rgba(0, 0, 0, 0.016),
+    0px 0px 1.2px rgba(0, 0, 0, 0.019),
+    0px 0px 1.7px rgba(0, 0, 0, 0.022),
+    0px 0px 2.5px rgba(0, 0, 0, 0.025),
+    0px 0px 3.5px rgba(0, 0, 0, 0.028),
+    0px 0px 5px rgba(0, 0, 0, 0.031),
+    0px 0px 7.3px rgba(0, 0, 0, 0.034),
+    0px 0px 11.3px rgba(0, 0, 0, 0.039),
+    0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .dropdown-content ul a{
+    color: #161a37;
+    font-weight: 500;
+}
+
+header .dropdown-content ul li {
+    padding: 0.5em;
+}
+
+header .item-dropdown-content {
+    border-bottom: 0.01px solid #161a37;
+}
+
+header .dropdown-content ul li:hover {
+    background-color: #161a37;
+    color: #FEFEFE;
+    transition: 200ms ease-in-out;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: 17em;    
+}
+
+header .header-menu-languages ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+header .header-menu-languages ul a img{
+    width: 2em;
+}

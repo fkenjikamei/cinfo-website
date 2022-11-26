@@ -4,10 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
 }
+
+/* Header. */
 
 header {
     padding: 0.5em;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,6 +31,12 @@ header {
     position: relative;
 }
 
+header .header-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header .logo-cinfo {
     height: 3em;
 }
@@ -39,7 +49,6 @@ header .header-menu {
 header .header-menu a {
     text-decoration: none;
     color: #161A37;
-    font-family: "Poppins";
     font-weight: 600;
     position: relative;
 }
@@ -47,7 +56,6 @@ header .header-menu a {
 header .header-menu p {
     text-decoration: none;
     color: #161A37;
-    font-family: "Poppins";
     font-weight: 600;
     position: relative;
 }
@@ -103,5 +111,123 @@ header .header-menu-languages ul {
 }
 
 header .header-menu-languages ul a img{
-    width: 2em;
+    width: 1em;
 }
+
+/* Main. */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FEFEFE;
+}
+
+/* Seção de introdução. */
+
+.texto-introducao {
+    margin: 1em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-introducao .texto h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+
+.texto-introducao .texto p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 0.9em;
+    margin: 0.5em;
+}
+
+.texto-introducao .imagens-introducao {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    padding-top: 1em;
+}
+
+.texto-introducao .imagens-introducao img {
+    height: 3.5em;
+}
+
+/* Seção de notícias. */
+
+.noticias {
+    background-color: #02B4E2;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.noticias .title-noticias {
+    color: #FEFEFE;
+}
+
+.noticias .cards-noticias {
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.noticias .card-noticia {
+    border-radius: 5px;
+}
+
+.noticias .card-noticia .square{
+    border-radius: 10px 10px 0 0;
+    background-color: #161A37;
+    width: 19em;
+    height: 10em;
+}
+
+.noticias .card-noticia .texto-noticia {
+    border-radius: 0 0 10px 10px;
+    background-color: #F1F1F1;
+    height: 8em;
+    padding: 0.5em;
+}
+
+.noticias .card-noticia .texto-noticia  {
+    border-radius: 0 0 10px 10px;
+    background-color: #F1F1F1;
+    height: 8em;
+}
+
+.noticias .card-noticia .texto-noticia .topico-noticia {
+    color: #1549B3;
+    font-weight: 600;
+    font-size: 0.7em;
+    padding: 0.1em;
+}
+
+.noticias .card-noticia .texto-noticia .titulo-noticia {
+    font-weight: 600;
+    padding: 0.1em;
+}
+.noticias .card-noticia .texto-noticia .descricao-noticia {
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0.1em;
+}
+.noticias .card-noticia .texto-noticia .data-noticia {
+    color: #1549B3;
+    font-weight: 600;
+    font-size: 0.7em;
+    padding: 0.1em;
+}
+

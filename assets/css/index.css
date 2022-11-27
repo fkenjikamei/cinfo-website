@@ -29,6 +29,7 @@ header {
     0px 5.6px 11.3px rgba(0, 0, 0, 0.039),
     0px 10px 20px rgba(0, 0, 0, 0.05);
     position: relative;
+    z-index: 3;
 }
 
 header .header-imagem {
@@ -135,12 +136,14 @@ main {
 }
 
 .texto-introducao .texto h1 {
+    color: #161a37;
     text-align: center;
     font-weight: 700;
     font-size: 1.9em;
 }
 
 .texto-introducao .texto p {
+    color: #161a37;
     text-align: justify;
     font-weight: 500;
     font-size: 0.9em;
@@ -187,6 +190,7 @@ main {
 
 .noticias .card-noticia {
     border-radius: 5px;
+    width: 30%;
     box-shadow:
     0px 0px 1.7px rgba(0, 0, 0, 0.047),
     0px 0px 4.3px rgba(0, 0, 0, 0.067),
@@ -198,7 +202,6 @@ main {
 .noticias .card-noticia .square{
     border-radius: 10px 10px 0 0;
     background-color: #161A37;
-    width: 19em;
     height: 10em;
 }
 
@@ -238,3 +241,142 @@ main {
     padding: 0.1em;
 }
 
+/* Seção de eventos. */
+
+.eventos {
+    width: 80%;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.eventos .background-texto {
+    font-weight: 700;
+    color: #1549B3;
+    text-shadow: 1px 1px 5px #161a37;
+    font-size: 210px;
+    letter-spacing: 10px;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+}
+
+.eventos .evento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 2;
+}
+
+.eventos .evento .data-evento {
+    background-color: #161A37;
+    margin: 0.5em;
+    height: 7em;
+    width: 7em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos .evento .data-evento p {
+    color: #FEFEFE;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.eventos .evento .data-evento .dia {
+    color: #02B4E2;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 60px;
+}
+
+.eventos .evento .descricao-evento {
+    background-color: #161A37;
+    margin: 0.5em;
+    height: 7em;
+    width: 30em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventos .evento .descricao-evento p {
+    color: #FEFEFE;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+/* Seção da biblioteca virtual. */
+
+.biblioteca-virtual {
+    position: relative;
+    overflow: hidden;
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+}
+
+.biblioteca-virtual .titulo {
+    font-weight: 700;
+    font-size: 2em;
+    color: #161a37;
+    margin-bottom: 1em;
+}
+
+.biblioteca-virtual .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.biblioteca-virtual .container img {
+    cursor: pointer;
+}
+
+.biblioteca-virtual .livros-container {
+    display: flex;
+    gap: 5em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.biblioteca-virtual .livros-container::-webkit-scrollbar {
+    display: none;
+}
+
+.biblioteca-virtual .livro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.biblioteca-virtual .livro-card img {
+    width: 7em;
+}
+
+.biblioteca-virtual .livro-card h1 {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 0.3em;
+    width: 8em;
+    color: #161a37;
+}
+
+.biblioteca-virtual .livro-card p {
+    font-size: 500;
+    font-size: 0.9em;
+    color: #161a37;
+}

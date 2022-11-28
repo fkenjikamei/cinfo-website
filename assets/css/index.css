@@ -380,3 +380,72 @@ main {
     font-size: 0.9em;
     color: #161a37;
 }
+
+/* Footer. */
+
+footer {
+    margin-top: 1em;
+    width: 100%;
+}
+
+footer .top-footer {
+    display: flex;
+}
+
+footer .right-top-footer {
+    width: 50%;
+    background-color: #02B4E2;
+    padding: 2em;
+    color: #FEFEFE;
+}
+
+footer .right-top-footer h1 {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+footer .right-top-footer p {
+    margin-top: 1em;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+footer .right-top-footer .contato {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+footer .right-top-footer .contato p{
+    margin-top: 0;
+}
+
+footer .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#161a37;
+    padding: 1em;
+}
+
+footer .bottom-footer .redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+footer .bottom-footer .redes-sociais img {
+    width: 2em;
+}
+
+footer .bottom-footer .direitos {
+    padding-top: 0.4em;
+}
+
+footer .bottom-footer .direitos p {
+    color: #FEFEFE;
+    font-size: 0.6em;
+}
